@@ -11,13 +11,22 @@ const textsColor = {
 }
 
 const typeMessage = {
-	success: 1,
-	info: 2,
-	error: 0
+	success: {
+		label: 'SUCCESS',
+		color: textsColor.FgGreen
+	},
+	info: {
+		label: 'INFO',
+		color: textsColor.FgCyan
+	},
+	error: {
+		label: 'ERROR',
+		color: textsColor.FgRed
+	}
 }
 
 const message = (type, message) => {
-	console.log(textsColor.FgGreen,'[success] ' + message)
+	console.log(type.color,`[${type.label}]: ` + message)
 	console.log(textsColor.FgWhite)
 }
 
