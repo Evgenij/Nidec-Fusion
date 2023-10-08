@@ -103,5 +103,5 @@ Role.belongsTo(User)
 Workshift.hasMany(User) // 1:M
 User.belongsTo(Workshift) // M:1
 
-Skill.hasMany(UserSkill)
-UserSkill.belongsTo()
+//Skill.hasMany(UserSkill)
+//UserSkill.belongsTo()
