@@ -1,5 +1,5 @@
 const sequelize = require('../db')
-const {DataType, DataTypes} = require('sequelize')
+const { DataTypes} = require('sequelize')
 
 const User = sequelize.define('user', {
 	id: {
@@ -78,7 +78,7 @@ const UserSkill = sequelize.define('user_skill', {
 	status: {
 		type: DataTypes.BOOLEAN,
 		default: false
-	},
+	}
 })
 
 const Workplace = sequelize.define('workplace', {
@@ -97,11 +97,27 @@ const Workplace = sequelize.define('workplace', {
 })
 
 // 1:1
-User.hasOne(Role)
-Role.belongsTo(User)
+//Role.hasOne(Role)
+User.belongsTo(Role)
 
 Workshift.hasMany(User) // 1:M
-User.belongsTo(Workshift) // M:1
+User.belongsTo(Workshift) // M:1 -> Created `workshift_id` in table `users`
 
-//Skill.hasMany(UserSkill)
-//UserSkill.belongsTo()
+User.hasMany(Workplace)
+Workshift.hasMany(Workplace)
+Workplace.belongsTo(User)
+Workplace.belongsTo(Workshift)
+Workplace.belongsTo(Skill)
+
+User.belongsToMany(Skill, {through: UserSkill})
+Skill.belongsToMany(User, {through: UserSkill})
+
+module.exports = {
+	User,
+	Skill,
+	Role,
+	Workplace,
+	Workshift,
+	UserSkill
+}
+
