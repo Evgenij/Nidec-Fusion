@@ -19,6 +19,10 @@ const typeMessage = {
 		label: 'INFO',
 		color: textsColor.FgCyan
 	},
+	output: {
+		label: 'OUTPUT',
+		color: textsColor.FgYellow
+	},
 	error: {
 		label: 'ERROR',
 		color: textsColor.FgRed
