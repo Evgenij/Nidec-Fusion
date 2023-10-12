@@ -3,7 +3,6 @@ const {User} = require("../models/models");
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const UserDTO = require("../dto/UserDTO");
-const {message, typeMessage} = require("../../console");
 
 const generateJWT = (id, username, role) => {
 	return jwt.sign(
