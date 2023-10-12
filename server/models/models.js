@@ -1,5 +1,5 @@
 const sequelize = require('../db')
-const { DataTypes } = require('sequelize')
+const { DataTypes} = require('sequelize')
 
 const User = sequelize.define('user', {
 	id: {
@@ -40,7 +40,7 @@ const Workshift = sequelize.define('workshift', {
 		type: DataTypes.STRING,
 		unique: true,
 		allowNull: false
-	}
+	},
 })
 
 const Role = sequelize.define('role', {

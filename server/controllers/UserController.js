@@ -71,18 +71,13 @@ class UserController {
 		}
 	}
 
-	async test(req, res, next) {
-		//console.log(req.query)
-
-		const {id} = req.query
-
+	async auth(req, res) {
 		try {
-			if(!id) {
-				return next(ApiError.badRequest('Error!!!'))
-			}
-			return res.json(id)
-		} catch (e) {
+			const newToken = generateJWT(req.user.id, req.user.username, req.user.role)
 
+			return res.status(200).json({token: newToken})
+		} catch (e) {
+			console.log(e)
 		}
 	}
 }
