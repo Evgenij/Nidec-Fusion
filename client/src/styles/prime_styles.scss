@@ -1,0 +1,33 @@
+.p {
+  &-button {
+    padding: 0.8em 1em;
+  }
+  &-inputtext {
+    padding: 0.8em 1em;
+  }
+
+}
+
+.p-password {
+  &-input {
+    width: 100%;
+    padding-right: 44px;
+  }
+  i{
+    top: 8px;
+    right: 0;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.p-button {
+  padding: 0.8em;
+
+  &-label {
+    font-weight: 600;
+  }
+}
