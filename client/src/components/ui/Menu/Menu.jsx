@@ -30,7 +30,7 @@ const Menu = () => {
 	]
 
 	return (
-		<nav className={['flex p-2 absolute bottom-0 left-0 w-full bg-white border-2 border-slate-500', styles.menu].join(' ')}>
+		<nav className={['flex p-2 absolute bottom-0 left-0 w-full bg-white border-2 border-slate-600', styles.menu].join(' ')}>
 			{
 				links.map((link, index) => {
 					return <MenuItem key={index} href={link.href} icon={link.icon}/>
