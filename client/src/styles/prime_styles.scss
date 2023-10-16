@@ -1,11 +1,13 @@
+@import "vars";
+
 .p {
   &-button {
     padding: 0.8em 1em;
   }
   &-inputtext {
     padding: 0.8em 1em;
+    color: $text;
   }
-
 }
 
 .p-password {

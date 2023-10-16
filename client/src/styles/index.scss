@@ -9,10 +9,13 @@ body{
   padding: 0;
   height: 100vh;
 
-  //* {
-  //  margin: 0;
-  //  padding: 0;
-  //}
+  * {
+    outline: none;
+  }
+
+  a {
+    width: 100%;
+  }
 }
 
 #root {
@@ -22,6 +25,10 @@ body{
 
 .input-label {
   font-weight: 600;
+}
+
+.bg-primary {
+  background-color: $primary;
 }
 
 @import "responsive";

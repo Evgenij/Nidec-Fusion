@@ -1,3 +1,4 @@
 export const DASHBOARD_ROUTE = '/dashboard'
-export const AUTH_ROUTE = '/'
+export const LOGIN_ROUTE = '/'
+export const REGISTRATION_ROUTE = '/registration'
 export const ERROR_404_ROUTE = '*'

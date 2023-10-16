@@ -1,5 +1,5 @@
 import Dashboard from "./pages/Dashboard/Dashboard";
-import {AUTH_ROUTE, DASHBOARD_ROUTE} from "./utils/consts";
+import {LOGIN_ROUTE, DASHBOARD_ROUTE} from "./utils/consts";
 import Auth from "./pages/Auth/Auth";
 
 export const authRoutes = [
@@ -11,7 +11,7 @@ export const authRoutes = [
 
 export const publicRoutes = [
 	{
-		path: AUTH_ROUTE,
+		path: LOGIN_ROUTE,
 		component: Auth
 	}
 ]
