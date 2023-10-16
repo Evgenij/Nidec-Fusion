@@ -13,9 +13,16 @@ body{
   //  margin: 0;
   //  padding: 0;
   //}
-
-  #root {
-    padding: 2%;
-    height: 100vh;
-  }
 }
+
+#root {
+ padding: 2%;
+ height: 100vh;
+}
+
+.input-label {
+  font-weight: 600;
+}
+
+@import "responsive";
+@import "prime_styles";
