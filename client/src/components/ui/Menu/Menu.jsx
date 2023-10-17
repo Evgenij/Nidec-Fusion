@@ -1,36 +1,15 @@
 import React from 'react'
 import styles from './Menu.module.scss'
 import PropTypes from 'prop-types'
-import {DASHBOARD_ROUTE, ERROR_404_ROUTE, LOGIN_ROUTE} from "../../../utils/consts";
+import {menuLinks} from "../../../utils/consts";
 import MenuItem from "./MenuItem/MenuItem";
 
 const Menu = () => {
 
-	const links = [
-		{
-			href: LOGIN_ROUTE,
-			icon: 'pi-user'
-		},
-		{
-			href: DASHBOARD_ROUTE,
-			icon: 'pi-user'
-		},
-		{
-			href: ERROR_404_ROUTE,
-			icon: 'pi-user'
-		},
-		{
-			href: DASHBOARD_ROUTE,
-			icon: 'pi-user'
-		},
-		{
-			href: ERROR_404_ROUTE,
-			icon: 'pi-user'
-		},
-	]
+	const links = menuLinks.leaders
 
 	return (
-		<nav className={['flex p-2 absolute bottom-0 left-0 w-full bg-white border-2 border-slate-600', styles.menu].join(' ')}>
+		<nav className={['flex p-2 fixed bottom-0 left-0 w-full bg-white', styles.menu].join(' ')}>
 			{
 				links.map((link, index) => {
 					return <MenuItem key={index} href={link.href} icon={link.icon}/>

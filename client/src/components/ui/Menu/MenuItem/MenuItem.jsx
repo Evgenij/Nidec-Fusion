@@ -8,7 +8,7 @@ const MenuItem = ({href, icon}) => {
 	const currentLocation = location.pathname === href
 
 	return (
-		<Link to={href} className={['p-3 flex justify-center items-center rounded-lg py-4 '
+		<Link to={href} className={['flex justify-center items-center rounded-lg py-3 '
 			+ (currentLocation ? 'bg-primary text-white' : 'text-gray-950'), styles.menuitem].join(' ')}>
 			<i className={'pi '+icon}></i>
 		</Link>
