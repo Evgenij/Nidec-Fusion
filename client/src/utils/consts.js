@@ -17,7 +17,8 @@ export const menuLinks = {
 		{
 			index: 1,
 			icon: 'pi-map-marker',
-			href: WORKPLACES_ROUTE
+			href: WORKPLACES_ROUTE,
+			notifications: 32
 		},{
 			index: 2,
 			icon: 'pi-users',

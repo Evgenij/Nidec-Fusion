@@ -9,10 +9,10 @@ const Menu = () => {
 	const links = menuLinks.leaders
 
 	return (
-		<nav className={['flex p-2 fixed bottom-0 left-0 w-full bg-white', styles.menu].join(' ')}>
+		<nav className={['flex p-2 space-x-2 fixed bottom-0 left-0 w-full bg-white', styles.menu].join(' ')}>
 			{
 				links.map((link, index) => {
-					return <MenuItem key={index} href={link.href} icon={link.icon}/>
+					return <MenuItem key={index} href={link.href} icon={link.icon} notifications={link.notifications}/>
 				})
 			}
 		</nav>
