@@ -74,9 +74,10 @@ const Auth = () => {
 	}, [data.name, data.surname]);
 
 	return (
-		<div className={['flex flex-col justify-center h-full', styles.auth].join(' ')}>
+		<div className={['flex flex-col justify-start h-full pb-16 overflow-scroll', (isLogin ? 'pt-12' : 'pt-0'),
+			styles.auth].join(' ')}>
 			<Logo logo={isLogin} header='Registartion'/>
-			<form action="" className={'flex flex-col space-y-4 ' + (isLogin ? 'mt-16' : 'mt-6')}>
+			<form action="" className={'flex flex-col space-y-4 ' + (isLogin ? 'mt-12' : 'mt-6')}>
 				{
 					!isLogin &&
 					<div className="row flex flex-col space-y-2">

@@ -18,53 +18,63 @@ export const menuLinks = {
 			index: 1,
 			icon: 'pi-map-marker',
 			href: WORKPLACES_ROUTE,
-			notifications: 32
+			notifications: 0
 		},{
 			index: 2,
 			icon: 'pi-users',
-			href: EMPLOYEES_ROUTE
+			href: EMPLOYEES_ROUTE,
+			notifications: 0
 		},{
 			index: 3,
 			icon: 'pi-home',
-			href: DASHBOARD_ROUTE
+			href: DASHBOARD_ROUTE,
+			notifications: 0
 		},{
 			index: 4,
 			icon: 'pi-bell',
-			href: MESSAGES_ROUTE
+			href: MESSAGES_ROUTE,
+			notifications: 3
 		},{
 			index: 5,
 			icon: 'pi-envelope',
-			href: EVENTS_ROUTE
+			href: EVENTS_ROUTE,
+			notifications: 0
 		},
 	],
 	employees: [
 		{
 			index: 1,
 			icon: 'pi-users',
-			href: LEADERS_ROUTE
+			href: LEADERS_ROUTE,
+			notifications: 0
 		},{
 			index: 2,
 			icon: 'pi-bolt',
-			href: DASHBOARD_ROUTE
+			href: DASHBOARD_ROUTE,
+			notifications: 0
 		},{
 			index: 3,
 			icon: 'pi-bell',
-			href: MESSAGES_ROUTE
+			href: MESSAGES_ROUTE,
+			notifications: 0
 		},
 	],
 	process_ur: [
 		{
 			index: 1,
 			icon: 'pi-users',
-			href: LEADERS_ROUTE
+			href: LEADERS_ROUTE,
+			notifications: 0
 		},{
 			index: 2,
 			icon: 'pi-home',
-			href: DASHBOARD_ROUTE
+			href: DASHBOARD_ROUTE,
+			notifications: 0
 		},{
 			index: 3,
 			icon: 'pi-bell',
-			href: MESSAGES_ROUTE
+			href: MESSAGES_ROUTE,
+			notifications: 0
 		},
 	]
 }
