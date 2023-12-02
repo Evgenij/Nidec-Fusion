@@ -1,1 +1,1 @@
-# NidecFL v.0.1
+# Nidec Fusion v.0.1
